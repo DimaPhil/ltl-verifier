@@ -46,6 +46,7 @@ sealed class LtlExpression {
                     closureHelper(f.lhs)
                     closureHelper(f.rhs)
                 }
+                else -> {}
             }
         }
 

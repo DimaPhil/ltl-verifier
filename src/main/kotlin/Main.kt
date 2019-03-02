@@ -54,6 +54,6 @@ fun main(args: Array<String>) {
             println("Return back to ${answer.startIndex!!}, it's a cycle")
         }
 
-        println("--------------\n")
+        println()
     }
 }
