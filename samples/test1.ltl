@@ -1,0 +1,3 @@
+G (F POWER_ON)
+G (PRESTART -> (PRESTART U POWER_ON))
+G (hal_init -> (F tim4_enable))
