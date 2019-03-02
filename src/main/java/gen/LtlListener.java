@@ -143,11 +143,11 @@ public interface LtlListener extends ParseTreeListener {
 	 * labeled alternative in {@link LtlParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterParenthesis(LtlParser.ParenthesisContext ctx);
+	void enterParenthesis(LtlParser.ParenthesesContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code parenthesis}
 	 * labeled alternative in {@link LtlParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitParenthesis(LtlParser.ParenthesisContext ctx);
+	void exitParenthesis(LtlParser.ParenthesesContext ctx);
 }

@@ -2,11 +2,8 @@ package gen;// Generated from /home/dmitry/Documents/work/git/ltl-verifier/src/m
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.misc.*;
 import org.antlr.v4.runtime.tree.*;
 import java.util.List;
-import java.util.Iterator;
-import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class LtlParser extends Parser {
@@ -332,11 +329,11 @@ public class LtlParser extends Parser {
 			else return visitor.visitChildren(this);
 		}
 	}
-	public static class ParenthesisContext extends ExpressionContext {
+	public static class ParenthesesContext extends ExpressionContext {
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public ParenthesisContext(ExpressionContext ctx) { copyFrom(ctx); }
+		public ParenthesesContext(ExpressionContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
 			if ( listener instanceof LtlListener ) ((LtlListener)listener).enterParenthesis(this);
@@ -347,7 +344,7 @@ public class LtlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof LtlVisitor ) return ((LtlVisitor<? extends T>)visitor).visitParenthesis(this);
+			if ( visitor instanceof LtlVisitor ) return ((LtlVisitor<? extends T>)visitor).visitParentheses(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -372,7 +369,7 @@ public class LtlParser extends Parser {
 			switch (_input.LA(1)) {
 			case T__0:
 				{
-				_localctx = new ParenthesisContext(_localctx);
+				_localctx = new ParenthesesContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
 

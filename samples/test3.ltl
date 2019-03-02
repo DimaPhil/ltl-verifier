@@ -1,0 +1,3 @@
+SName -> SName1
+F (SName -> AddToken)
+F (SName1 U SName)

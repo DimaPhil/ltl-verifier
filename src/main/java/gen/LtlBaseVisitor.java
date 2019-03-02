@@ -93,5 +93,5 @@ public class LtlBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements Lt
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitParenthesis(LtlParser.ParenthesisContext ctx) { return visitChildren(ctx); }
+	@Override public T visitParentheses(LtlParser.ParenthesesContext ctx) { return visitChildren(ctx); }
 }

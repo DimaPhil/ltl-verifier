@@ -1,18 +1,18 @@
 grammar Ltl;
 
 expression
-    : '(' expression ')'
-    | '!' expression
-    | 'X' expression
-    | 'F' expression
-    | 'G' expression
-    | lhs=expression 'U' rhs=expression
-    | lhs=expression 'R' rhs=expression
-    | lhs=expression '&&' rhs=expression
-    | lhs=expression '||' rhs=expression
-    | lhs=expression '->' rhs=expression
-    | ID
-    | BOOLEAN
+    : '(' expression ')'                 # parentheses
+    | '!' expression                     # negation
+    | 'X' expression                     # next
+    | 'F' expression                     # future
+    | 'G' expression                     # globally
+    | lhs=expression 'U' rhs=expression  # until
+    | lhs=expression 'R' rhs=expression  # release
+    | lhs=expression '&&' rhs=expression # conjunction
+    | lhs=expression '||' rhs=expression # disjunction
+    | lhs=expression '->' rhs=expression # implication
+    | ID                                 # variable
+    | BOOLEAN                            # boolean
     ;
 
 BOOLEAN : 'true' | 'false';

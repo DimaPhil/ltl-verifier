@@ -147,13 +147,13 @@ public class LtlBaseListener implements LtlListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParenthesis(LtlParser.ParenthesisContext ctx) { }
+	@Override public void enterParenthesis(LtlParser.ParenthesesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParenthesis(LtlParser.ParenthesisContext ctx) { }
+	@Override public void exitParenthesis(LtlParser.ParenthesesContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

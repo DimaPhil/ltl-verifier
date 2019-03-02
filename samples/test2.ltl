@@ -1,0 +1,4 @@
+F (SName -> SText)
+F (SName -> ClearText)
+true U state0
+true U state5

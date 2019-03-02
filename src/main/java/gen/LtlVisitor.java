@@ -92,5 +92,5 @@ public interface LtlVisitor<T> extends ParseTreeVisitor<T> {
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitParenthesis(LtlParser.ParenthesisContext ctx);
+	T visitParentheses(LtlParser.ParenthesesContext ctx);
 }
